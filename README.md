@@ -1,15 +1,15 @@
-# WordNet Learning Journey 📚
+# WordNet Learning Journey
 
 A structured approach to learning WordNet - the lexical database for English.
 
-## 🎯 Learning Goals
+## Learning Goals
 Master WordNet fundamentals and advanced concepts for natural language processing tasks.
 
 ---
 
-## 📅 Daily Progress
+## Daily Progress
 
-### **Day 1: Synsets Basics** ✅
+### Day 1: Synsets Basics
 **Date:** January 21, 2026
 
 **Topics Covered:**
@@ -38,7 +38,7 @@ Master WordNet fundamentals and advanced concepts for natural language processin
 
 ---
 
-### **Day 2:** 
+### Day 2: 
 **Date:** 
 
 **Topics Covered:**
@@ -55,7 +55,7 @@ Master WordNet fundamentals and advanced concepts for natural language processin
 
 ---
 
-### **Day 3:**
+### Day 3:
 **Date:**
 
 **Topics Covered:**
@@ -63,12 +63,12 @@ Master WordNet fundamentals and advanced concepts for natural language processin
 
 ---
 
-## 📖 Resources
+## Resources
 - NLTK Documentation: https://www.nltk.org/
 - WordNet Documentation: https://wordnet.princeton.edu/
 - NLTK WordNet Interface: https://www.nltk.org/howto/wordnet.html
 
-## 🛠️ Setup
+## Setup
 ```bash
 pip install nltk
 ```
@@ -79,6 +79,6 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 ```
 
-## 📝 Files
+## Files
 - `Word_Net_1.py` - Day 1: Synsets Basics
 - More files to be added as learning progresses...
