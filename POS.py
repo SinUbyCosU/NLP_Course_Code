@@ -16,15 +16,25 @@ text= nltk.word_tokenize("she sells seashells on the seashore")
 print("\n POS tags:", nltk.pos_tag(text))
 
 # ambigious words in browns news corpus 
+# Get all words with their POS tags from the Brown corpus news section
 brown_news_tagged= brown.tagged_words(categories='news')
+# Create a frequency distribution that tracks which tags each word can have
 data=nltk.ConditionalFreqDist((word.lower(),tag) for (word,tag) in brown_news_tagged)
+# Counter to track how many ambiguous words we've found
 count=0
+# Loop through each unique word in the corpus
 for word in data.conditions():
+    # Get all the different tags this word can have
     tags=data[word].keys()
+    # If a word has more than one tag, it's ambiguous (can be used as different parts of speech)
     if len(tags)>1:
+        # Print the word and all its possible tags
         print(f"\nWord: {word} \t Tags: {list(tags)}")
         count+=1
+        # Stop after showing 10 examples
         if count==10:
             break
+# Calculate what percentage of all words are ambiguous
 pr=round(count/len(data.conditions())*100,2)
+# Display the percentage result
 print(f"\nPercentage of ambigious words in brown news corpus: {pr} %")
