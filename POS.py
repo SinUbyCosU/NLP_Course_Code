@@ -13,4 +13,6 @@ text= nltk.word_tokenize("she sells seashells on the seashore")
 # Tag each word with its part of speech (PRP=pronoun, VBZ=verb, NN=noun, etc.) and print the result
 print("\n POS tags:", nltk.pos_tag(text))
 
-# ambigious words in browns news corpus
+# ambigious words in browns news corpus 
+brown_news_tagged= brown.tagged_words(categories='news')
+data=nltk.ConditionalFreqDist((word.lower(),tag) for (word.tag) in brown_news_tagged)
