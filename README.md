@@ -1,10 +1,10 @@
-# 🧠 Playing With WordNet
+# Playing With WordNet
 
 > A hands-on exploration of Natural Language Processing using NLTK and WordNet
 
 This repository documents my journey learning NLP fundamentals through practical implementations. Each script demonstrates core concepts with real examples and detailed explanations.
 
-## 📚 What's Inside
+## What's Inside
 
 ### Day 1: Synsets Basics ([Word_Net_1.py](Word_Net_1.py))
 **Exploring WordNet's lexical database**
@@ -46,7 +46,7 @@ tagged = nltk.pos_tag(text)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -69,7 +69,7 @@ python Word_Net_1.py
 python POS.py
 ```
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - [x] Understand WordNet's structure and synsets
 - [x] Implement POS tagging for text analysis
@@ -78,14 +78,14 @@ python POS.py
 - [ ] Semantic similarity metrics
 - [ ] Named entity recognition
 
-## 📖 Resources
+## Resources
 
 - [NLTK Documentation](https://www.nltk.org/)
 - [WordNet Official](https://wordnet.princeton.edu/)
 - [NLTK WordNet Interface](https://www.nltk.org/howto/wordnet.html)
 - [Brown Corpus](https://en.wikipedia.org/wiki/Brown_Corpus)
 
-## 💡 Why This Matters
+## Why This Matters
 
 Natural Language Processing is fundamental to:
 - Search engines understanding queries
