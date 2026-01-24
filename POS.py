@@ -15,4 +15,12 @@ print("\n POS tags:", nltk.pos_tag(text))
 
 # ambigious words in browns news corpus 
 brown_news_tagged= brown.tagged_words(categories='news')
-data=nltk.ConditionalFreqDist((word.lower(),tag) for (word.tag) in brown_news_tagged)
+data=nltk.ConditionalFreqDist((word.lower(),tag) for (word,tag) in brown_news_tagged)
+count=0
+for word in data.conditions():
+    tags=data[word].keys()
+    if len(tags)>1:
+        print(f"\nWord: {word} \t Tags: {list(tags)}")
+        count+=1
+        if count==10:
+            break
