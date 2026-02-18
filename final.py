@@ -9,7 +9,7 @@ from gensim.models import Word2Vec, Doc2Vec
 from gensim.models.doc2vec import TaggedDocument
 from collections import Counter
 
-# Download NLTK data (run once)
+# Download NLTK data 
 nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('omw-1.4')
 
 # Load Data
