@@ -11,7 +11,6 @@ from collections import Counter
 
 # Download NLTK data 
 nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('omw-1.4')
-
 # Load Data
 train_df = pd.read_csv("mental_health_training.csv")
 test_df = pd.read_csv("mental_health_test.csv")
