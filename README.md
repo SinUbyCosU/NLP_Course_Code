@@ -46,11 +46,35 @@ tagged = nltk.pos_tag(text)
 
 ---
 
+### Day 3: Mental Health Text Pipeline ([final.py](final.py))
+**Combining TF-IDF, WordNet, Word2Vec, and Doc2Vec for sentiment-style classification**
+
+Three incremental tasks stitch together a lightweight NLP workflow on the provided mental health dataset:
+- Build a TF-IDF vocabulary to inspect the most informative terms and sparse-matrix shapes ([Q1.py](Q1.py)).
+- Use WordNet plus Word2Vec to explore the most frequent token, its synsets, and its dense embeddings ([Q2.py](Q2.py)).
+- Train Doc2Vec embeddings and a logistic regression classifier to predict mental-health labels, reporting weighted F1 ([final.py](final.py)).
+
+```python
+print("--- Task 1: TF-IDF ---")
+print(vectorizer.get_feature_names_out()[:10])  # quick vocab peek
+
+print("\n--- Task 2: WordNet & Word2Vec ---")
+print(f"Top word: {top_word}")
+print(wordnet.synsets(top_word)[0].definition())
+
+print("\n--- Task 3: Doc2Vec Classification ---")
+print("F1 Score:", f1_score(test_df['label'], y_pred, average='weighted'))
+```
+
+**Key Result:** End-to-end embeddings improve downstream classification and provide interpretable lexical context.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
 ```bash
-pip install nltk
+pip install nltk pandas scikit-learn gensim
 ```
 
 ### Download Required NLTK Data
@@ -61,12 +85,20 @@ nltk.download('omw-1.4')
 nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('punkt')
 nltk.download('brown')
+nltk.download('stopwords')
 ```
+
+### Dataset
+- Place `mental_health_training.csv` and `mental_health_test.csv` in the project root (already included in this repo).
+- Files contain `text` and `label` columns used across the experiments.
 
 ### Run the Examples
 ```bash
 python Word_Net_1.py
 python POS.py
+python Q1.py
+python Q2.py
+python final.py
 ```
 
 ## Learning Objectives
@@ -98,4 +130,4 @@ Understanding these basics opens doors to advanced NLP applications like transfo
 
 ---
 
-**Last Updated:** January 25, 2026
+**Last Updated:** February 19, 2026
