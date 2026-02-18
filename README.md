@@ -55,7 +55,7 @@ Three incremental tasks stitch together a lightweight NLP workflow on the provid
 - Train Doc2Vec embeddings and a logistic regression classifier to predict mental-health labels, reporting weighted F1 ([final.py](final.py)).
 
 ```python
-print(" Task 1: TF-IDF ---")
+print(" Task 1: TF-IDF ")
 print(vectorizer.get_feature_names_out()[:10])  # quick vocab peek
 
 print("\n--- Task 2: WordNet & Word2Vec ---")
