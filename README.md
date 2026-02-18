@@ -62,7 +62,7 @@ print("\nTask 2: WordNet & Word2Vec ")
 print(f"Top word: {top_word}")
 print(wordnet.synsets(top_word)[0].definition())
 
-print("\nTask 3: Doc2Vec Classification ---")
+print("\nTask 3: Doc2Vec Classification ")
 print("F1 Score:", f1_score(test_df['label'], y_pred, average='weighted'))
 ```
 
