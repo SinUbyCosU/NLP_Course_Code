@@ -58,7 +58,7 @@ Three incremental tasks stitch together a lightweight NLP workflow on the provid
 print(" Task 1: TF-IDF ")
 print(vectorizer.get_feature_names_out()[:10])  # quick vocab peek
 
-print("\n--- Task 2: WordNet & Word2Vec ---")
+print("\n--- Task 2: WordNet & Word2Vec ")
 print(f"Top word: {top_word}")
 print(wordnet.synsets(top_word)[0].definition())
 
