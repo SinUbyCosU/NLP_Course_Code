@@ -16,6 +16,7 @@ test = pd.read_csv("mental_health_test.csv")
 print("Train Vocab:", list(TfidfVectorizer().fit(train['Text']).vocabulary_)[:5])
 print("Test Vocab:",  list(TfidfVectorizer().fit(test['Text']).vocabulary_)[:5])
 
+
 # 3. TASK 2: WORDNET & WORD2VEC
 # Tokenize all training text in one line
 tokens = [word_tokenize(t.lower()) for t in train['Text']]
