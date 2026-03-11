@@ -28,7 +28,6 @@ for epoch in range(150):
     loss = loss_fn(model(X), y) # Make guesses and calculate error
     loss.backward()             # Figure out how to fix error
     optimizer.step()            # Update the model
-
 # 4. TEST IT OUT
 test_seq = torch.tensor([[[100], [101], [102]]], dtype=torch.float32)
 print(f"Prediction for [100, 101, 102]: {model(test_seq).item():.2f}")
