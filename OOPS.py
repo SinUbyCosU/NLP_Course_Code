@@ -25,3 +25,18 @@ account=BankAccount(1000000)
 print(account.get_balance())
 account.deposit(500000)
 print(account.get_balance())
+
+
+#Inheritance
+
+class Animal:
+    def eat(self):
+        print("animal is eating")
+
+class Dog(Animal):
+    def bark(self):
+        print("woof")
+
+my_dog=Dog()
+my_dog.eat()
+my_dog.bark()
