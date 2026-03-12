@@ -40,3 +40,15 @@ class Dog(Animal):
 my_dog=Dog()
 my_dog.eat()
 my_dog.bark()
+
+class Cat:
+    def make_Sound(self):
+        return "meow"
+class Duck:
+    def make_Sound(self):
+        return "quack"
+def play_sound(animal_object):
+    print(animal_object.make_Sound())
+
+play_sound(Cat())
+play_sound(Duck())
