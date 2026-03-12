@@ -52,3 +52,20 @@ def play_sound(animal_object):
 
 play_sound(Cat())
 play_sound(Duck())
+
+#Abstraction
+
+from abc import ABC, abstractionmethod
+class shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class TVRemote(RemoteControl):
+    def turn_on(self):
+        print("TV is turned on")
+
+    def turn_off(self):
+        print("TV is turned off")
+my_remote=TVRemote()
+my_remote.turn_on()
