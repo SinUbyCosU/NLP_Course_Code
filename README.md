@@ -1,6 +1,6 @@
 # Playing With WordNet
 
-> A hands-on exploration of Natural Language Processing using NLTK and WordNet
+> A hands-on exploration of Natural Language Processing using NLTK and WordNet.
 
 This repository documents my journey learning NLP fundamentals through practical implementations. Each script demonstrates core concepts with real examples and detailed explanations.
 
