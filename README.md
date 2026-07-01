@@ -5,7 +5,6 @@
 This repository documents my journey learning NLP fundamentals through practical implementations. Each script demonstrates core concepts with real examples and detailed explanations.
 
 ## What's Inside
-
 ### Day 1: Synsets Basics ([Word_Net_1.py](Word_Net_1.py))
 **Exploring WordNet's lexical database**
 
