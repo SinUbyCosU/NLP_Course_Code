@@ -12,7 +12,6 @@ Understanding how words are organized by meaning in WordNet:
 - Synsets (synonym sets) - grouping words with similar meanings
 - Accessing definitions, examples, and word relationships
 - Working with lemmas and parts of speech
-
 ```python
 import nltk
 from nltk.corpus import wordnet as wn
