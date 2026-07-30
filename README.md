@@ -126,4 +126,4 @@ Natural Language Processing is fundamental to:
 Understanding these basics opens doors to advanced NLP applications like transformers, BERT, and GPT models.
 
 ---
-**Last Updated:** February 19, 2026
+
