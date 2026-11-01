@@ -7,7 +7,6 @@ This repository documents my journey learning NLP fundamentals through practical
 
 
 ## Repo Walkthrough
-
 ### Day 1: Synsets Basics ([Word_Net_1.py](Word_Net_1.py))
 **Exploring WordNet's lexical database**
 
